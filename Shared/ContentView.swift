@@ -15,6 +15,13 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
+    
+    @State
+    private var pdfDoc: Data?
+    
+    @State
+    private var openFilePicker: Bool = false
+    
 
     var body: some View {
         NavigationView {
@@ -29,37 +36,40 @@ struct ContentView: View {
                 .onDelete(perform: deleteItems)
             }
             .toolbar {
-#if os(iOS)
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                    Button(action: { openFilePicker = true }) {
+                        Label("Open PDF file", systemImage: "plus")
                     }
                 }
             }
-            Text("Select an item")
+            
+            VStack(alignment: .leading) {
+                if ((pdfDoc) != nil) {
+                    let _ = print(pdfDoc!)
+                    PDFDocView(data: pdfDoc!, autoScales: true)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                } else {
+                    Text("Go open a doc")
+                        
+                }
+                Spacer()
+            }.frame(
+                maxWidth: .infinity,
+                maxHeight: .infinity,
+                alignment: .topLeading
+            ).sheet(
+                isPresented: $openFilePicker,
+                onDismiss: loadPDF,
+                content: { PDFDocPicker(outputData: $pdfDoc) }
+            ).background(Color.white).frame(maxWidth: .infinity, maxHeight: .infinity)
+                .navigationBarHidden(true)
         }
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
+    private func loadPDF() {
+        
     }
-
+    
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             offsets.map { items[$0] }.forEach(viewContext.delete)
@@ -85,6 +95,6 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView().previewDevice("iPad mini (6th generation)").environment(\.managedObjectContext, PersistenceController.preview.container.viewContext).previewInterfaceOrientation(.landscapeLeft)
     }
 }

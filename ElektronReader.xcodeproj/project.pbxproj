@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		393C99F36F07BBB79AF8ADB6 /* Pods_ElektronReader__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FEC8D8D71F4A2B37D5002B /* Pods_ElektronReader__iOS_.framework */; };
+		70599D5030686E95F332CFA7 /* Pods_ElektronReader__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE049F15225A845C4ADD430 /* Pods_ElektronReader__macOS_.framework */; };
 		852EE22327782DB7006EFFF7 /* ElektronReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 852EE21027782DB6006EFFF7 /* ElektronReader.xcdatamodeld */; };
 		852EE22427782DB7006EFFF7 /* ElektronReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 852EE21027782DB6006EFFF7 /* ElektronReader.xcdatamodeld */; };
 		852EE22527782DB7006EFFF7 /* ElektronReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852EE21227782DB6006EFFF7 /* ElektronReaderApp.swift */; };
@@ -17,9 +19,15 @@
 		852EE22A27782DB7006EFFF7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852EE21427782DB6006EFFF7 /* Persistence.swift */; };
 		852EE22B27782DB7006EFFF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852EE21527782DB7006EFFF7 /* Assets.xcassets */; };
 		852EE22C27782DB7006EFFF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852EE21527782DB7006EFFF7 /* Assets.xcassets */; };
+		8544E8672778357800568328 /* PDFDocView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8544E8662778357800568328 /* PDFDocView.swift */; };
+		8544E8682778357800568328 /* PDFDocView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8544E8662778357800568328 /* PDFDocView.swift */; };
+		8544E86B277842CB00568328 /* PDFDocPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8544E86A277842CB00568328 /* PDFDocPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B40458434FA7E647A75D0E9 /* Pods-ElektronReader (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElektronReader (macOS).debug.xcconfig"; path = "Target Support Files/Pods-ElektronReader (macOS)/Pods-ElektronReader (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		2FE049F15225A845C4ADD430 /* Pods_ElektronReader__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElektronReader__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5998C34DCD6A5081B64745B6 /* Pods-ElektronReader (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElektronReader (macOS).release.xcconfig"; path = "Target Support Files/Pods-ElektronReader (macOS)/Pods-ElektronReader (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		852EE21127782DB6006EFFF7 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		852EE21227782DB6006EFFF7 /* ElektronReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElektronReaderApp.swift; sourceTree = "<group>"; };
 		852EE21327782DB6006EFFF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,6 +36,12 @@
 		852EE21A27782DB7006EFFF7 /* ElektronReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElektronReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		852EE22027782DB7006EFFF7 /* ElektronReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElektronReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		852EE22227782DB7006EFFF7 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		8544E8662778357800568328 /* PDFDocView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDocView.swift; sourceTree = "<group>"; };
+		8544E86927783A3F00568328 /* ElektronReader (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ElektronReader (iOS).entitlements"; sourceTree = "<group>"; };
+		8544E86A277842CB00568328 /* PDFDocPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDocPicker.swift; sourceTree = "<group>"; };
+		958BE7BFC933183DED788999 /* Pods-ElektronReader (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElektronReader (iOS).release.xcconfig"; path = "Target Support Files/Pods-ElektronReader (iOS)/Pods-ElektronReader (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		B5E4C3076609422C65CA0288 /* Pods-ElektronReader (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElektronReader (iOS).debug.xcconfig"; path = "Target Support Files/Pods-ElektronReader (iOS)/Pods-ElektronReader (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		C3FEC8D8D71F4A2B37D5002B /* Pods_ElektronReader__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElektronReader__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				393C99F36F07BBB79AF8ADB6 /* Pods_ElektronReader__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,18 +57,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70599D5030686E95F332CFA7 /* Pods_ElektronReader__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		441E443D0917FE5144EEE3BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3FEC8D8D71F4A2B37D5002B /* Pods_ElektronReader__iOS_.framework */,
+				2FE049F15225A845C4ADD430 /* Pods_ElektronReader__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7877E88213D67636AEF12F76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4C3076609422C65CA0288 /* Pods-ElektronReader (iOS).debug.xcconfig */,
+				958BE7BFC933183DED788999 /* Pods-ElektronReader (iOS).release.xcconfig */,
+				2B40458434FA7E647A75D0E9 /* Pods-ElektronReader (macOS).debug.xcconfig */,
+				5998C34DCD6A5081B64745B6 /* Pods-ElektronReader (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		852EE20A27782DB6006EFFF7 = {
 			isa = PBXGroup;
 			children = (
+				8544E86927783A3F00568328 /* ElektronReader (iOS).entitlements */,
 				852EE20F27782DB6006EFFF7 /* Shared */,
 				852EE22127782DB7006EFFF7 /* macOS */,
 				852EE21B27782DB7006EFFF7 /* Products */,
+				7877E88213D67636AEF12F76 /* Pods */,
+				441E443D0917FE5144EEE3BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +104,8 @@
 				852EE21427782DB6006EFFF7 /* Persistence.swift */,
 				852EE21527782DB7006EFFF7 /* Assets.xcassets */,
 				852EE21027782DB6006EFFF7 /* ElektronReader.xcdatamodeld */,
+				8544E8662778357800568328 /* PDFDocView.swift */,
+				8544E86A277842CB00568328 /* PDFDocPicker.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -93,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 852EE22F27782DB7006EFFF7 /* Build configuration list for PBXNativeTarget "ElektronReader (iOS)" */;
 			buildPhases = (
+				02720CDC9B8A7020BE0AABE7 /* [CP] Check Pods Manifest.lock */,
 				852EE21627782DB7006EFFF7 /* Sources */,
 				852EE21727782DB7006EFFF7 /* Frameworks */,
 				852EE21827782DB7006EFFF7 /* Resources */,
+				430295855E366FA7D52DE496 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -110,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 852EE23227782DB7006EFFF7 /* Build configuration list for PBXNativeTarget "ElektronReader (macOS)" */;
 			buildPhases = (
+				BCBCF36BF435B11F9EE98319 /* [CP] Check Pods Manifest.lock */,
 				852EE21C27782DB7006EFFF7 /* Sources */,
 				852EE21D27782DB7006EFFF7 /* Frameworks */,
 				852EE21E27782DB7006EFFF7 /* Resources */,
+				37A1A0C418EB051C67E0B73D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +224,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02720CDC9B8A7020BE0AABE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElektronReader (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37A1A0C418EB051C67E0B73D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElektronReader (macOS)/Pods-ElektronReader (macOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElektronReader (macOS)/Pods-ElektronReader (macOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElektronReader (macOS)/Pods-ElektronReader (macOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		430295855E366FA7D52DE496 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElektronReader (iOS)/Pods-ElektronReader (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElektronReader (iOS)/Pods-ElektronReader (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElektronReader (iOS)/Pods-ElektronReader (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCBCF36BF435B11F9EE98319 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElektronReader (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		852EE21627782DB7006EFFF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -186,6 +312,8 @@
 			files = (
 				852EE22527782DB7006EFFF7 /* ElektronReaderApp.swift in Sources */,
 				852EE22927782DB7006EFFF7 /* Persistence.swift in Sources */,
+				8544E8672778357800568328 /* PDFDocView.swift in Sources */,
+				8544E86B277842CB00568328 /* PDFDocPicker.swift in Sources */,
 				852EE22327782DB7006EFFF7 /* ElektronReader.xcdatamodeld in Sources */,
 				852EE22727782DB7006EFFF7 /* ContentView.swift in Sources */,
 			);
@@ -197,6 +325,7 @@
 			files = (
 				852EE22627782DB7006EFFF7 /* ElektronReaderApp.swift in Sources */,
 				852EE22A27782DB7006EFFF7 /* Persistence.swift in Sources */,
+				8544E8682778357800568328 /* PDFDocView.swift in Sources */,
 				852EE22427782DB7006EFFF7 /* ElektronReader.xcdatamodeld in Sources */,
 				852EE22827782DB7006EFFF7 /* ContentView.swift in Sources */,
 			);
@@ -318,14 +447,17 @@
 		};
 		852EE23027782DB7006EFFF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E4C3076609422C65CA0288 /* Pods-ElektronReader (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ElektronReader (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQU64G4LPB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -340,22 +472,26 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacksonhu.ElektronReader;
 				PRODUCT_NAME = ElektronReader;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
 		852EE23127782DB7006EFFF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958BE7BFC933183DED788999 /* Pods-ElektronReader (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ElektronReader (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQU64G4LPB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -370,15 +506,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacksonhu.ElektronReader;
 				PRODUCT_NAME = ElektronReader;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		852EE23327782DB7006EFFF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B40458434FA7E647A75D0E9 /* Pods-ElektronReader (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -407,6 +545,7 @@
 		};
 		852EE23427782DB7006EFFF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5998C34DCD6A5081B64745B6 /* Pods-ElektronReader (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
